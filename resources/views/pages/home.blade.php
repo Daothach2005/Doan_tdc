@@ -141,6 +141,15 @@
                     </div>
                 </div>
             </div>
+            
+            <!-- Mobile View More Button - Only visible on mobile -->
+            <div class="row d-lg-none">
+                <div class="col-12">
+                    <div class="text-center mt-4 mobile-view-more">
+                        <a href="#" class="view-more-link-mobile">Xem thêm <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -182,39 +191,6 @@
                                     </div>
                                 </div>
                             </div>
-
-                            <!-- Card 1 -->
-                            <div class="col-lg-4 col-md-6">
-                                <div class="qa-card h-100 shadow-sm">
-                                    <div class="qa-image-container position-relative overflow-hidden">
-                                        <img src="{{ asset('images/tdc2.jpg') }}" alt="Hoạt động 1" class="qa-bg-image">
-                                    </div>
-                                    <div class="qa-content p-3">
-                                        <div class="qa-date-badge">
-                                            <span class="qa-day">27</span>
-                                            <span class="qa-month">Tháng 11</span>
-                                        </div>
-                                        <h4 class="qa-card-title mt-3">VẬN ĐỘNG QUYÊN GÓP HỖ TRỢ ĐỒI BỊU NƯỚC ANH THƯ</h4>
-                                        <span class="qa-tag hot-tag">HOT</span>
-                                    </div>
-                                </div>
-                            </div>
-                             <!-- Card 1 -->
-                            <div class="col-lg-4 col-md-6">
-                                <div class="qa-card h-100 shadow-sm">
-                                    <div class="qa-image-container position-relative overflow-hidden">
-                                        <img src="{{ asset('images/tdc2.jpg') }}" alt="Hoạt động 1" class="qa-bg-image">
-                                    </div>
-                                    <div class="qa-content p-3">
-                                        <div class="qa-date-badge">
-                                            <span class="qa-day">27</span>
-                                            <span class="qa-month">Tháng 11</span>
-                                        </div>
-                                        <h4 class="qa-card-title mt-3">VẬN ĐỘNG QUYÊN GÓP HỖ TRỢ ĐỒI BỊU NƯỚC ANH THƯ</h4>
-                                        <span class="qa-tag hot-tag">HOT</span>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
 
@@ -222,22 +198,6 @@
                     <div class="carousel-item">
                         <div class="row justify-content-center g-4">
                             <!-- Card 1 -->
-                            <div class="col-lg-4 col-md-6">
-                                <div class="qa-card h-100 shadow-sm">
-                                    <div class="qa-image-container position-relative overflow-hidden">
-                                        <img src="{{ asset('images/tdc2.jpg') }}" alt="Hoạt động 1" class="qa-bg-image">
-                                    </div>
-                                    <div class="qa-content p-3">
-                                        <div class="qa-date-badge">
-                                            <span class="qa-day">27</span>
-                                            <span class="qa-month">Tháng 11</span>
-                                        </div>
-                                        <h4 class="qa-card-title mt-3">VẬN ĐỘNG QUYÊN GÓP HỖ TRỢ ĐỒI BỊU NƯỚC ANH THƯ</h4>
-                                        <span class="qa-tag hot-tag">HOT</span>
-                                    </div>
-                                </div>
-                            </div>
-                             <!-- Card 1 -->
                             <div class="col-lg-4 col-md-6">
                                 <div class="qa-card h-100 shadow-sm">
                                     <div class="qa-image-container position-relative overflow-hidden">
