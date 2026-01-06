@@ -1,0 +1,681 @@
+/* =========================
+   RESET CƠ BẢN
+========================= */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* =========================
+   TOP HEADER
+========================= */
+.top-header {
+    background: linear-gradient(135deg, white 50%, #1d48d5 50%);
+    padding: 12px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: center; /* Căn giữa */
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    z-index: 2;
+    margin-right: -500px; /* Cách bên phải 100px */
+}
+
+.top-nav-item {
+    transition: all 0.3s ease;
+}
+
+.top-nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    display: block;
+    white-space: nowrap;
+}
+
+.top-nav-link:hover {
+    opacity: 0.85;
+}
+
+/* =========================
+   SEARCH
+========================= */
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    width: 220px;
+    padding: 10px 15px 10px 40px;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+    color: white;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.search-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.search-input:focus {
+    background: rgba(255, 255, 255, 0.25);
+    border-color: white;
+}
+
+.search-icon-inside {
+    position: absolute;
+    left: 14px;
+    color: white;
+    font-size: 16px;
+    pointer-events: none;
+    opacity: 0.8;
+}
+
+/* =========================
+   MAIN HEADER
+========================= */
+.main-header {
+    background: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+    gap: 20px; /* Khoảng cách giữa các phần tử */
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    width: auto;
+    flex-shrink: 0;
+}
+
+/* =========================
+   MAIN SEARCH (Ngoài hamburger)
+========================= */
+.main-search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Đẩy về bên phải */
+}
+
+.main-search-input {
+    width: 300px;
+    padding: 12px 15px 12px 45px;
+    font-size: 14px;
+    background: #f8f9fa;
+    border: 2px solid #e9ecef;
+    border-radius: 25px;
+    color: #495057;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.main-search-input::placeholder {
+    color: #6c757d;
+}
+
+.main-search-input:focus {
+    background: white;
+    border-color: #1d48d5;
+    box-shadow: 0 0 0 3px rgba(29, 72, 213, 0.1);
+}
+
+.main-search-icon {
+    position: absolute;
+    left: 16px;
+    color: #6c757d;
+    font-size: 16px;
+    pointer-events: none;
+}
+
+.logo-img {
+    width: 400px;
+    height: 100px;
+    margin: 0 25px 0 30px;
+    border-radius: 15px;
+}
+
+/* =========================
+   NAV MENU
+========================= */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-shrink: 0;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    color: #374151 !important;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 12px 0;
+    white-space: nowrap;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active,
+.nav-link:visited {
+    color: #1e40af !important;
+    text-decoration: none;
+}
+
+.nav-link.dropdown::after {
+    content: "▼";
+    font-size: 12px;
+    margin-left: 8px;
+    color: #6b7280;
+}
+
+/* =========================
+   NAV SEARCH
+========================= */
+.nav-search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.nav-search-input {
+    width: 250px;
+    padding: 10px 15px 10px 40px;
+    font-size: 14px;
+    background: #f8f9fa;
+    border: 2px solid #e9ecef;
+    border-radius: 25px;
+    color: #495057;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.nav-search-input::placeholder {
+    color: #6c757d;
+}
+
+.nav-search-input:focus {
+    background: white;
+    border-color: #1d48d5;
+    box-shadow: 0 0 0 3px rgba(29, 72, 213, 0.1);
+}
+
+.nav-search-icon {
+    position: absolute;
+    left: 14px;
+    color: #6c757d;
+    font-size: 16px;
+    pointer-events: none;
+}
+
+/* =========================
+   DROPDOWN
+========================= */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    border-radius: 10px;
+    min-width: 220px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    display: none;
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item {
+    display: block;
+    padding: 12px 25px;
+    color: #374151;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.25s ease;
+}
+
+.dropdown-item:hover {
+    background: #ede2d0;
+    color: #1e40af;
+    padding-left: 32px;
+}
+
+/* =========================
+   MOBILE BUTTON
+========================= */
+.mobile-toggle {
+    display: none;
+    background: #1d48d5;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    padding: 8px 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.mobile-toggle:hover {
+    background: #0f3cc9;
+}
+
+/* =========================
+   RESPONSIVE – FIX LỖI CHÉO
+========================= */
+
+/* Tablet & Mobile */
+@media (max-width: 991px) {
+    .top-header {
+        background: #1d48d5;
+    }
+
+    .top-nav {
+        justify-content: center; /* Căn giữa */
+        margin-right: 0;
+        padding: 0 10px;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .header-container {
+        flex-wrap: nowrap;
+        position: relative;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .logo-section {
+        width: auto;
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+    }
+
+    .logo-img {
+        width: 300px;
+        height: 80px;
+        margin-left: 15px;
+    }
+
+    .mobile-toggle {
+        display: block;
+        position: absolute;
+        right: 15px; /* Sát bên phải */
+        top: 50%;
+        transform: translateY(-50%);
+        flex-shrink: 0;
+        z-index: 10; /* Đảm bảo nằm trên search */
+    }
+
+    /* Main search trên mobile - Icon tròn */
+    .main-search-container {
+        position: absolute;
+        right: 65px; /* Bên trái hamburger với khoảng cách */
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: 0;
+        z-index: 9; /* Thấp hơn hamburger */
+    }
+
+    .main-search-input {
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        border-radius: 50%;
+        background: #1d48d5;
+        border: none;
+        color: transparent;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .main-search-input::placeholder {
+        color: transparent;
+    }
+
+    .main-search-icon {
+        color: white;
+        font-size: 18px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        transition: all 0.3s ease;
+    }
+
+    /* Khi focus thì mở rộng */
+    .main-search-input:focus {
+        width: 180px; /* Giảm width để không đè lên hamburger */
+        padding: 12px 15px 12px 45px;
+        border-radius: 25px;
+        background: white;
+        color: #495057;
+        border: 2px solid #1d48d5;
+        right: 0; /* Căn phải để không bị tràn */
+    }
+
+    .main-search-input:focus::placeholder {
+        color: #6c757d;
+    }
+
+    .main-search-input:focus ~ .main-search-icon {
+        color: #6c757d;
+        left: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    /* 🔥 FIX LỖI NỀN CHÉO */
+    .top-header {
+        background: #1d48d5;
+    }
+
+    .top-nav {
+        justify-content: center;
+        margin-right: 0;
+        padding: 0 10px;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .search-input {
+        width: 180px;
+    }
+
+    .header-container {
+        flex-wrap: nowrap; /* Không wrap để giữ layout */
+        position: relative;
+        align-items: center;
+    }
+
+    .logo-section {
+        width: calc(100% - 80px);
+        display: flex;
+        align-items: center;
+        flex-shrink: 0; /* Không co lại */
+    }
+
+    .logo-img {
+        width: 300px;
+        height: 80px;
+        margin-left: 15px;
+    }
+
+    .mobile-toggle {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        flex-shrink: 0; /* Không co lại */
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #ffffff;
+        padding: 25px 20px;
+        gap: 0;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        position: absolute; /* Absolute để không ảnh hưởng layout */
+        top: 100%; /* Nằm dưới header */
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        transform: translateX(-100%); /* Ẩn bên trái */
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+
+    .nav-menu.show {
+        display: flex;
+        transform: translateX(0); /* Slide vào */
+        opacity: 1;
+    }
+
+    .nav-item {
+        width: 100%;
+        border-bottom: 1px solid #e9ecef;
+    }
+
+    .nav-item:last-child {
+        border-bottom: none;
+    }
+
+    .nav-link {
+        display: block;
+        padding: 18px 15px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #2c3e50 !important;
+        border-radius: 8px;
+        margin-bottom: 5px;
+        text-decoration: none;
+    }
+
+    .nav-link:hover,
+    .nav-link:focus,
+    .nav-link:active,
+    .nav-link:visited {
+        background: #e3f2fd;
+        color: #1976d2 !important;
+        text-decoration: none;
+    }
+
+    .dropdown-menu {
+        position: static;
+        background: #ffffff;
+        box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 10px 0;
+        margin: 5px 0 15px 0;
+        border-radius: 8px;
+        border: 1px solid #e9ecef;
+        display: none; /* Ẩn mặc định */
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.3s ease;
+    }
+
+    /* Hiển thị dropdown khi có class dropdown-open */
+    .nav-item.dropdown-open .dropdown-menu {
+        display: block;
+        max-height: 300px;
+    }
+
+    /* Thêm icon mũi tên cho dropdown */
+    .nav-link.dropdown::after {
+        content: "▼";
+        font-size: 10px;
+        margin-left: 8px;
+        color: #6b7280;
+        transition: transform 0.3s ease;
+    }
+
+    .nav-item.dropdown-open .nav-link.dropdown::after {
+        transform: rotate(180deg);
+    }
+
+    .dropdown-item {
+        padding: 12px 25px;
+        font-size: 15px;
+        color: #495057 !important;
+        border-radius: 6px;
+        margin: 2px 10px;
+        text-decoration: none;
+    }
+
+    .dropdown-item:hover,
+    .dropdown-item:focus,
+    .dropdown-item:active,
+    .dropdown-item:visited {
+        background: #f1f3f4;
+        color: #1976d2 !important;
+        padding-left: 25px; /* Không di chuyển */
+        text-decoration: none;
+    }
+}
+
+/* Mobile nhỏ */
+@media (max-width: 576px) {
+    .logo-img {
+        width: 200px;
+        height: 60px;
+        margin: 0 15px;
+    }
+
+    .search-input {
+        width: 160px;
+    }
+
+    .nav-link {
+        font-size: 16px;
+    }
+}
+
+/* =========================
+   FIX MÀU TRẮNG KHI NHẤN
+========================= */
+/* Ngăn chặn màu trắng mặc định của browser */
+a, a:link, a:visited, a:hover, a:active, a:focus {
+    text-decoration: none !important;
+}
+
+/* Đảm bảo màu không bị override */
+.nav-link, .dropdown-item {
+    -webkit-tap-highlight-color: transparent !important;
+    outline: none !important;
+}
+
+/* Force màu cho nav links */
+.nav-link {
+    color: #374151 !important;
+}
+
+.nav-link:hover, .nav-link:focus, .nav-link:active {
+    color: #1e40af !important;
+}
+
+/* Force màu cho dropdown items */
+.dropdown-item {
+    color: #374151 !important;
+}
+
+.dropdown-item:hover, .dropdown-item:focus, .dropdown-item:active {
+    color: #1e40af !important;
+}
+
+/* Mobile nav links */
+@media (max-width: 991px) {
+    .nav-link {
+        color: #2c3e50 !important;
+    }
+    
+    .nav-link:hover, .nav-link:focus, .nav-link:active {
+        color: #1976d2 !important;
+    }
+    
+    .dropdown-item {
+        color: #495057 !important;
+    }
+    
+    .dropdown-item:hover, .dropdown-item:focus, .dropdown-item:active {
+        color: #1976d2 !important;
+    }
+}
+
+/* Mobile nhỏ */
+@media (max-width: 576px) {
+    .logo-img {
+        width: 200px;
+        height: 60px;
+        margin: 0 15px;
+    }
+
+    .mobile-toggle {
+        right: 10px; /* Gần mép hơn */
+        padding: 6px 8px; /* Nhỏ hơn */
+        font-size: 16px;
+    }
+
+    .main-search-container {
+        right: 45px; /* Điều chỉnh khoảng cách */
+    }
+
+    .main-search-input {
+        width: 35px;
+        height: 35px;
+    }
+
+    .main-search-input:focus {
+        width: 130px; /* Nhỏ hơn để tránh tràn */
+    }
+
+    .main-search-icon {
+        font-size: 16px;
+    }
+
+    .nav-link {
+        font-size: 16px;
+    }
+}
+
+/* =========================
+   MOBILE SEARCH STYLING
+========================= */
+@media (max-width: 991px) {
+    /* Mobile search styling */
+    .nav-search-container {
+        margin: 20px 0 10px 0;
+        padding: 15px;
+        background: white;
+        border-radius: 10px;
+        border: 1px solid #e9ecef;
+        order: -1; /* Đặt search lên đầu */
+    }
+
+    .nav-search-input {
+        width: 100%;
+        padding: 12px 15px 12px 40px;
+        font-size: 16px;
+        border-radius: 20px;
+    }
+
+    .nav-search-icon {
+        left: 14px;
+        color: #1d48d5;
+    }
+}
