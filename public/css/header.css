@@ -254,8 +254,11 @@ body {
     z-index: 1000;
 }
 
-.nav-item:hover .dropdown-menu {
-    display: block;
+/* Desktop hover - chỉ áp dụng cho desktop */
+@media (min-width: 992px) {
+    .nav-item:hover .dropdown-menu {
+        display: block;
+    }
 }
 
 .dropdown-item {

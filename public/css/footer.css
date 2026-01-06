@@ -7,21 +7,22 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: #fff;
-    background: #005BAC;
+    background: #ffffff;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
+
+
 /* =========================
    BANNER
 ========================= */
 .banner {
-    background: url('/tdc.jpg');
+    background: url('/tdc.jpg'), #005BAC;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     padding: 60px 5% 100px;
     position: relative;
     flex: 1;
@@ -89,11 +90,10 @@ body {
    FOOTER
 ========================= */
 .footer {
-    background: url('/tdc.jpg');
+    background: url('/tdc.jpg'), #005BAC;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     padding: 70px 5% 0;
     margin-top: auto;
 }
@@ -228,6 +228,21 @@ body {
 }
 
 @media (max-width: 768px) {
+    .carousel-item img {
+        height: 300px;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 10%;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
     .logo {
         width: 260px;
     }
@@ -242,12 +257,32 @@ body {
 
     .footer-container {
         flex-direction: column;
-        text-align: center;
+        text-align: left;
+    }
+
+    .footer-column {
+        min-width: auto;
+        margin-bottom: 30px;
+    }
+
+    .footer-column h3 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .social-icons {
+        justify-content: flex-start;
+        margin-top: 25px;
     }
 
     .copyright-ribbon {
         flex-direction: column;
         height: auto;
+    }
+
+    .copyright-left {
+        padding-left: 5%;
+        text-align: left;
     }
 
     .copyright-right {

@@ -88,60 +88,56 @@
 
         /* Footer */
         .footer {
-            background: #007BFF
-            padding: 70px 5% 0;
+            background: #005BAC;
+            padding: 60px 5% 40px;
             margin-top: auto;
+            text-align: center;
         }
 
         .footer-container {
-            max-width: 1200px;
+            max-width: 900px;
             margin: 0 auto;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            gap: 50px;
-            padding-bottom: 80px;
+            padding-bottom: 40px;
         }
 
         .footer-column {
-            flex: 1;
-            min-width: 300px;
+            margin-bottom: 30px;
         }
 
         .footer-column h3 {
-            font-size: 24px;
-            margin-bottom: 25px;
-            padding-bottom: 12px;
-            border-bottom: 3px solid #1e90ff;
-            display: inline-block;
+            font-size: 32px;
+            margin-bottom: 30px;
+            font-weight: bold;
+            color: #fff;
             position: relative;
         }
 
         .footer-column h3::after {
             content: '';
             position: absolute;
-            bottom: -3px;
-            left: 0;
-            width: 70px;
-            height: 3px;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
             background: #ffd700;
         }
 
-        .footer-column p,
-        .footer-column a {
+        .school-info {
+            text-align: center;
+            line-height: 2.2;
+        }
+
+        .school-info p {
             color: #e0f0ff;
-            line-height: 2;
-            font-size: 18px;
-            margin-bottom: 12px;
+            font-size: 20px;
+            margin-bottom: 15px;
+            font-weight: 400;
         }
 
-        .footer-column strong {
-            font-size: 18px;
-        }
-
-        .footer-column a:hover {
-            color: #ffd700;
-            text-decoration: underline;
+        .school-info strong {
+            color: #fff;
+            font-weight: bold;
         }
 
         .hotline-item {
@@ -275,7 +271,16 @@
             }
 
             .footer {
-                padding: 60px 5% 0;
+                padding: 60px 5% 40px;
+            }
+
+            .footer-column h3 {
+                font-size: 24px;
+            }
+            
+            .school-info p {
+                font-size: 16px;
+                line-height: 2;
             }
 
             .footer-container {
@@ -348,53 +353,15 @@
         <div class="footer-container">
             <div class="footer-column">
                 <h3>Thông Tin Trường</h3>
-                <p><strong>Địa chỉ:</strong> 53 Võ Văn Ngân, Phường Linh Chiểu, Thành phố Thủ Đức, TP. Hồ Chí Minh</p>
-                <p><strong>Điện thoại:</strong> 028.3896.6825 - 028.3897.0023</p>
-                <p><strong>Fax:</strong> 028.3896.2474</p>
-                <p><strong>Website:</strong> <a href="https://tdc.edu.vn">www.tdc.edu.vn</a></p>
-                <p><strong>Email:</strong> tdc@mail.tdc.edu.vn - tdc@tdc.edu.vn</p>
-            </div>
-
-            <div class="footer-column">
-                <h3>Hotline Liên Hệ</h3>
-                <div class="hotline-item">
-                    <i class="fas fa-phone-alt"></i>
-                    <div>
-                        <div>Phòng Tổ chức - Hành chính</div>
-                        <div class="hotline-text">0283.896.6825</div>
-                    </div>
-                </div>
-                <div class="hotline-item">
-                    <i class="fas fa-phone-alt"></i>
-                    <div>
-                        <div>Phòng Tuyển sinh - Đào tạo</div>
-                        <div class="hotline-text">0283.897.0023</div>
-                    </div>
-                </div>
-                <div class="hotline-item">
-                    <i class="fas fa-phone-alt"></i>
-                    <div>
-                        <div>Phòng Thanh tra GD - CTSV</div>
-                        <div class="hotline-text">0282.215.8640</div>
-                    </div>
-                </div>
-                <div class="hotline-item">
-                    <i class="fas fa-phone-alt"></i>
-                    <div>
-                        <div>Phòng Kế hoạch - Tài chính</div>
-                        <div class="hotline-text">0286.282.0044</div>
-                    </div>
-                </div>
-
-                <div class="social-icons">
-                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                    <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                <div class="school-info">
+                    <p><strong>Địa chỉ:</strong> 53 Võ Văn Ngân, Phường Linh Chiểu, Thành phố Thủ Đức, TP. Hồ Chí Minh</p>
+                    <p><strong>Điện thoại:</strong> 028.3896.6825 - 028.3897.0023</p>
+                    <p><strong>Fax:</strong> 028.3896.2474</p>
+                    <p><strong>Website:</strong> www.tdc.edu.vn</p>
+                    <p><strong>Email:</strong> tdc@mail.tdc.edu.vn - tdc@tdc.edu.vn</p>
                 </div>
             </div>
         </div>
-
-
     </footer>
     <!-- Phần Copyright ribbon giống ảnh -->
     <div class="copyright-ribbon">
